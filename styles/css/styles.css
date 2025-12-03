@@ -1,0 +1,399 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 30px;
+  background-color: #f4f4f4;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 10px;
+  }
+}
+
+.container {
+  width: 1000px;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 2em;
+  height: 700px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, 1fr);
+  }
+}
+
+.grid>li {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid>li {
+    grid-area: auto;
+  }
+}
+
+.grid-1 {
+  padding: 50px 40px;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-color: hsl(31, 66%, 93%);
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-1 {
+    order: 7;
+  }
+}
+
+.grid-1 em {
+  color: hsl(256, 67%, 59%);
+}
+
+.grid-1 img {
+  margin-top: 20px;
+}
+
+.grid-2 {
+  padding: 20px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-2 {
+    order: 1;
+  }
+}
+
+.grid-2 {
+  text-align: center;
+}
+
+.grid-2 h3 {
+  font-size: 6em;
+  line-height: 0.9;
+  font-weight: 500;
+}
+
+.grid-2 h3 strong {
+  color: hsl(39, 100%, 71%);
+  font-weight: 400;
+}
+
+.grid-2 img {
+  width: 35%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-2 span {
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.8;
+}
+
+.grid-3 {
+  padding: 20px 0 20px 50px;
+  overflow: hidden;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  background-color: hsl(254, 88%, 90%);
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-3 {
+    order: 4;
+    padding: 30px;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+.grid-3 h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 30px;
+}
+
+.grid-3 span {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-right: 30px;
+}
+
+.grid-3 img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  object-position: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-3 img {
+    border-radius: 20px;
+    height: 70%;
+  }
+}
+
+.grid-4 {
+  padding: 50px 10px;
+  grid-row-start: 6;
+  grid-row-end: 11;
+  background-color: hsl(39, 100%, 71%);
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-4 {
+    order: 8;
+  }
+}
+
+.grid-4 span {
+  padding: 0 30px;
+}
+
+.grid-4 img {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.grid-5 {
+  overflow: hidden;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-5 {
+    order: 2;
+  }
+}
+
+.grid-5 img {
+  width: 100%;
+  height: 70px;
+  margin-left: 50px;
+  display: flex;
+  object-fit: cover;
+  object-position: left;
+}
+
+.grid-5 span {
+  font-size: 2.4em;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  padding: 10px 90px 10px 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-5 span {
+    padding: 10px 10px 10px 20px;
+  }
+}
+
+.grid-6 {
+  overflow: hidden;
+  padding: 20px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  background-color: hsl(39, 100%, 71%);
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-6 {
+    order: 3;
+    padding-bottom: 0;
+  }
+}
+
+.grid-6 span {
+  padding-right: 20px;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-6 span {
+    margin-top: 10px;
+  }
+}
+
+.grid-6 img {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-6 img {
+    margin-top: 30px;
+  }
+}
+
+.grid-7 {
+  padding: 20px;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-7 {
+    order: 6;
+  }
+}
+
+.grid-7 h3 {
+  font-size: 6em;
+  font-weight: 400;
+}
+
+.grid-7 span {
+  font-size: 1.6em;
+  opacity: 0.8;
+  margin: 0 0 20px 0;
+}
+
+.grid-7 img {
+  width: 70%;
+}
+
+.grid-8 {
+  padding: 20px;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-color: hsl(256, 67%, 59%);
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-8 {
+    text-align: center;
+    order: 5;
+    flex-direction: column !important;
+  }
+}
+
+.grid-8 {
+  flex-direction: row;
+}
+
+.grid-8 img {
+  width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-8 img {
+    width: 80%;
+  }
+}
+
+.grid-8 span {
+  padding: 20px;
+}
