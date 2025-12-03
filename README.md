@@ -23,14 +23,13 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](./desktop.png)
-![Mobile](./mobile.png)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/SudoWilfried/bento-grid)
+- Live Site URL: [Netlify](https://bento-grid-237.netlify.app/)
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@SudoWilfried](https://www.frontendmentor.io/profile/SudoWilfried)
+- Twitter - [@_sudowill](https://www.x.com/_sudowill)
